@@ -16,7 +16,7 @@ float transY = 0.0f;
 float transZ = -5.0f;
 
 
-void InitGL ( GLvoid )     // Inicializamos parametros
+void InitGL(GLvoid)     // Inicializamos parametros
 {
 
 	//glShadeModel(GL_SMOOTH);							// Habilitamos Smooth Shading
@@ -31,7 +31,7 @@ void InitGL ( GLvoid )     // Inicializamos parametros
 
 void prisma(void)
 {
-	GLfloat vertice [8][3] = {
+	GLfloat vertice[8][3] = {
 				{1.5 ,-0.5, 0.5},    //Coordenadas Vértice 0 V0
 				{-1.5 ,-0.5, 0.5},    //Coordenadas Vértice 1 V1
 				{-1.5 ,-0.5, -0.5},    //Coordenadas Vértice 2 V2
@@ -40,57 +40,57 @@ void prisma(void)
 				{1.5 ,0.5, -0.5},    //Coordenadas Vértice 5 V5
 				{-1.5 ,0.5, -0.5},    //Coordenadas Vértice 6 V6
 				{-1.5 ,0.5, 0.5},    //Coordenadas Vértice 7 V7
-				};
+	};
 
 
-		glBegin(GL_POLYGON);	//Front
-			glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[0]);
-			glVertex3fv(vertice[4]);
-			glVertex3fv(vertice[7]);
-			glVertex3fv(vertice[1]);
-		glEnd();
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
 
-		glBegin(GL_POLYGON);	//Right
-			glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[0]);
-			glVertex3fv(vertice[3]);
-			glVertex3fv(vertice[5]);
-			glVertex3fv(vertice[4]);
-		glEnd();
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
 
-		glBegin(GL_POLYGON);	//Back
-			glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[6]);
-			glVertex3fv(vertice[5]);
-			glVertex3fv(vertice[3]);
-			glVertex3fv(vertice[2]);
-		glEnd();
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
 
-		glBegin(GL_POLYGON);  //Left
-			glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[1]);
-			glVertex3fv(vertice[7]);
-			glVertex3fv(vertice[6]);
-			glVertex3fv(vertice[2]);
-		glEnd();
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
 
-		glBegin(GL_POLYGON);  //Bottom
-	
-		glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[0]);
-			glVertex3fv(vertice[1]);
-			glVertex3fv(vertice[2]);
-			glVertex3fv(vertice[3]);
-		glEnd();
+	glBegin(GL_POLYGON);  //Bottom
 
-		glBegin(GL_POLYGON);  //Top
-			glColor3f(1.0f,0.0f,0.0f);
-			glVertex3fv(vertice[4]);
-			glVertex3fv(vertice[5]);
-			glVertex3fv(vertice[6]);
-			glVertex3fv(vertice[7]);
-		glEnd();
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(1.0f, 0.0f, 0.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
 }
 
 
@@ -150,7 +150,7 @@ void prismaC(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Top
-	glColor3f(1.8f, 0.0f, 0.0f);
+	glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[6]);
@@ -205,7 +205,7 @@ void prismaCc(void)
 
 	glBegin(GL_POLYGON);  //Bottom
 
-	glColor3f(1.0f, 0.0f, 0.6f);
+	glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[2]);
@@ -224,19 +224,19 @@ void prismaCc(void)
 void prismaG(void)
 {
 	GLfloat vertice[8][3] = {
-	{ 11.5 ,-0.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 12.5 ,-0.5, 0.5 },    //Coordenadas Vértice 0 V0
 	{ 6.5 ,-0.5, 0.5 },    //Coordenadas Vértice 1 V1
 	{ 6.5 ,-0.5, -0.5 },    //Coordenadas Vértice 2 V2
-	{ 11.5 ,-0.5, -0.5 },    //Coordenadas Vértice 3 V3
-	{ 11.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
-	{ 11.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 12.5 ,-0.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 12.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 12.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
 	{ 6.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
 	{ 6.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
 	};
 
 
 	glBegin(GL_POLYGON);	//Front
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[7]);
@@ -252,7 +252,7 @@ void prismaG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);	//Back
-	glColor3f(0.0f, 1.0f, 0.0f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[3]);
@@ -260,7 +260,7 @@ void prismaG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Left
-	glColor3f(1.0f, 1.0f, 1.0f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[7]);
 	glVertex3fv(vertice[6]);
@@ -269,7 +269,7 @@ void prismaG(void)
 
 	glBegin(GL_POLYGON);  //Bottom
 
-	glColor3f(0.4f, 0.2f, 0.6f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[2]);
@@ -277,7 +277,7 @@ void prismaG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Top
-	glColor3f(0.8f, 0.2f, 0.4f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[6]);
@@ -289,19 +289,19 @@ void prismaG(void)
 void prismaGg(void)
 {
 	GLfloat vertice[8][3] = {
-		{ 0.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
-	{ -1.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
-	{ -1.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
-	{ 0.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
-	{ 0.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
-	{ 0.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
-	{ -1.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
-	{ -1.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
+	{ 7.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 6.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 6.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 7.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 7.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 7.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 6.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 6.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
 	};
 
 
 	glBegin(GL_POLYGON);	//Front
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[7]);
@@ -310,6 +310,324 @@ void prismaGg(void)
 
 	glBegin(GL_POLYGON);	//Right
 	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 0.0f, 1.6f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+void prismaGgG(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 12.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 6.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 6.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 12.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 12.5 ,-5.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 12.5 ,-5.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 6.5 ,-5.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 6.5 ,-5.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+
+void prismaGgg(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 12.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 11.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 11.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 12.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 12.5 ,-2.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 12.5 ,-2.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 11.5 ,-2.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 11.5 ,-2.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 0.0f, 1.6f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+void prismaGggg(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 12.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 6.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 6.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 12.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 12.5 ,-5.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 12.5 ,-5.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 6.5 ,-5.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 6.5 ,-5.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+
+void prismaGG(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 12.5 ,-2.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 9.5 ,-2.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 9.5 ,-2.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 12.5 ,-2.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 12.5 ,-3.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 12.5 ,-3.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 9.5 ,-3.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 9.5 ,-3.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 0.0f, 1.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+//////////////////////////////////////RRRRRRRRRRRRRR
+void prismaR(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 18.5 ,-0.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 13.5 ,-0.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 13.5 ,-0.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 18.5 ,-0.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 18.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 18.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 13.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 13.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[3]);
 	glVertex3fv(vertice[5]);
@@ -325,7 +643,7 @@ void prismaGg(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Left
-	glColor3f(1.0f, 1.0f, 1.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[7]);
 	glVertex3fv(vertice[6]);
@@ -334,7 +652,7 @@ void prismaGg(void)
 
 	glBegin(GL_POLYGON);  //Bottom
 
-	glColor3f(0.4f, 0.2f, 0.6f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[2]);
@@ -342,29 +660,31 @@ void prismaGg(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Top
-	glColor3f(0.8f, 0.2f, 0.4f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[7]);
 	glEnd();
 }
-void prismaGgG(void)
+
+
+void prismaRr(void)
 {
 	GLfloat vertice[8][3] = {
-		{ 5.5 ,-4.5, 0.5 },    //Coordenadas Vértice 0 V0
-	{ -1.5 ,-4.5, 0.5 },    //Coordenadas Vértice 1 V1
-	{ -1.5 ,-4.5, -0.5 },    //Coordenadas Vértice 2 V2
-	{ 5.5 ,-4.5, -0.5 },    //Coordenadas Vértice 3 V3
-	{ 5.5 ,-5.5, 0.5 },    //Coordenadas Vértice 4 V4
-	{ 5.5 ,-5.5, -0.5 },    //Coordenadas Vértice 5 V5
-	{ -1.5 ,-5.5, -0.5 },    //Coordenadas Vértice 6 V6
-	{ -1.5 ,-5.5, 0.5 },    //Coordenadas Vértice 7 V7
+	{ 14.5 ,-5.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 13.5 ,-5.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 13.5 ,-5.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 14.5 ,-5.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 14.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 14.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 13.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 13.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
 	};
 
 
 	glBegin(GL_POLYGON);	//Front
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[7]);
@@ -372,7 +692,7 @@ void prismaGgG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);	//Right
-	glColor3f(0.0f, 0.0f, 1.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[3]);
 	glVertex3fv(vertice[5]);
@@ -380,7 +700,7 @@ void prismaGgG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);	//Back
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[3]);
@@ -388,7 +708,7 @@ void prismaGgG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Left
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[7]);
 	glVertex3fv(vertice[6]);
@@ -397,7 +717,7 @@ void prismaGgG(void)
 
 	glBegin(GL_POLYGON);  //Bottom
 
-	glColor3f(1.0f, 0.0f, 0.6f);
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[0]);
 	glVertex3fv(vertice[1]);
 	glVertex3fv(vertice[2]);
@@ -405,7 +725,70 @@ void prismaGgG(void)
 	glEnd();
 
 	glBegin(GL_POLYGON);  //Top
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+void prismaRrr(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 18.5 ,-2.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 17.5 ,-2.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 17.5 ,-2.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 18.5 ,-2.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 18.5 ,0.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 18.5 ,0.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 17.5 ,0.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 17.5 ,0.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3fv(vertice[4]);
 	glVertex3fv(vertice[5]);
 	glVertex3fv(vertice[6]);
@@ -413,126 +796,326 @@ void prismaGgG(void)
 	glEnd();
 }
 
+void prismaRR(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 18.5 ,-2.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 13.5 ,-2.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 13.5 ,-2.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 18.5 ,-2.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 18.5 ,-1.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 18.5 ,-1.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 13.5 ,-1.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 13.5 ,-1.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
 
 
-void display ( void )   // Creamos la funcion donde se dibuja
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+
+void prismaRrrr(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 17.5 ,-3.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 16.5 ,-3.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 16.5 ,-3.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 17.5 ,-3.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 17.5 ,-2.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 17.5 ,-2.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 16.5 ,-2.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 16.5 ,-2.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+
+void prismaRrrrr(void)
+{
+	GLfloat vertice[8][3] = {
+	{ 18.5 ,-3.5, 0.5 },    //Coordenadas Vértice 0 V0
+	{ 17.5 ,-3.5, 0.5 },    //Coordenadas Vértice 1 V1
+	{ 17.5 ,-3.5, -0.5 },    //Coordenadas Vértice 2 V2
+	{ 18.5 ,-3.5, -0.5 },    //Coordenadas Vértice 3 V3
+	{ 18.5 ,-5.5, 0.5 },    //Coordenadas Vértice 4 V4
+	{ 18.5 ,-5.5, -0.5 },    //Coordenadas Vértice 5 V5
+	{ 17.5 ,-5.5, -0.5 },    //Coordenadas Vértice 6 V6
+	{ 17.5 ,-5.5, 0.5 },    //Coordenadas Vértice 7 V7
+	};
+
+
+	glBegin(GL_POLYGON);	//Front
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[1]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Right
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[4]);
+	glEnd();
+
+	glBegin(GL_POLYGON);	//Back
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[3]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Left
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[7]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[2]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Bottom
+
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[0]);
+	glVertex3fv(vertice[1]);
+	glVertex3fv(vertice[2]);
+	glVertex3fv(vertice[3]);
+	glEnd();
+
+	glBegin(GL_POLYGON);  //Top
+	glColor3f(0.0f, 1.0f, 0.0f);
+	glVertex3fv(vertice[4]);
+	glVertex3fv(vertice[5]);
+	glVertex3fv(vertice[6]);
+	glVertex3fv(vertice[7]);
+	glEnd();
+}
+
+void display(void)   // Creamos la funcion donde se dibuja
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// Limiamos pantalla y Depth Buffer
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	//Poner Código Aquí.
-	
-	glTranslatef(transX,transY,transZ);
+
+	glTranslatef(transX, transY, transZ);
 	prisma();
-	glTranslatef(2.0f,0.0f,0.0f);//funcion de posisicion, es acomuativo el nuevo margen de referencia es la pocsicion del siguiente prisma
+	glTranslatef(2.0f, 0.0f, 0.0f);//funcion de posisicion, es acomuativo el nuevo margen de referencia es la pocsicion del siguiente prisma
 	prisma();
 	glTranslatef(-4.0f, 0.0f, 0.0f);
 	prisma();
 	prismaC();
 	prismaCc();
 	prismaG();
-    glutSwapBuffers ( );
-    //glFlush();
-    // Swap The Buffers
+	prismaGg();
+	prismaGgG();
+	prismaGgg();
+	prismaGG();
+	prismaR();
+	prismaRr();
+	prismaRrr();
+	prismaRR();
+	prismaRrrr();
+	prismaRrrrr();
+	glutSwapBuffers();
+	//glFlush();
+	// Swap The Buffers
 }
 
-void reshape ( int width , int height )   // Creamos funcion Reshape
+void reshape(int width, int height)   // Creamos funcion Reshape
 {
-  if (height==0)										// Prevenir division entre cero
+	if (height == 0)										// Prevenir division entre cero
 	{
-		height=1;
+		height = 1;
 	}
 
-	glViewport(0,0,width,height);	
+	glViewport(0, 0, width, height);
 
 	glMatrixMode(GL_PROJECTION);						// Seleccionamos Projection Matrix
 	glLoadIdentity();
 
 	// Tipo de Vista
 	//glOrtho(-5,5,-5,5,0.1,20);	
-	glFrustum (-0.1, 0.1,-0.1, 0.1, 0.1, 50.0);
+	glFrustum(-0.1, 0.1, -0.1, 0.1, 0.1, 50.0);
 }
 
-void keyboard ( unsigned char key, int x, int y )  // Create Keyboard Function
+void keyboard(unsigned char key, int x, int y)  // Create Keyboard Function
 {
-	switch ( key ) {
-		case 'w':
-		case 'W':
-			transZ +=0.2f;
-			printf("Posicion en Z: %f\n", transZ);
-			break;
-		case 's':
-		case 'S':
-			transZ -=0.2f;
-			printf("Posicion en Z: %f\n", transZ);
-			break;
-		case 'a':
-		case 'A':
-			transX -=0.2f;
-			break;
-		case 'd':
-		case 'D':
-			transX +=0.2f;
-			break;
-		case 'q':
-		case 'Q':
-			transY += 0.2f;
-			break;
-		case 'e':
-		case 'E':
-			transY -= 0.2f;
-			break;
-		case 27:        // Cuando Esc es presionado...
-			exit ( 0 );   // Salimos del programa
-		break;        
-		default:        // Cualquier otra
+	switch (key) {
+	case 'w':
+	case 'W':
+		transZ += 0.2f;
+		printf("Posicion en Z: %f\n", transZ);
 		break;
-  }
+	case 's':
+	case 'S':
+		transZ -= 0.2f;
+		printf("Posicion en Z: %f\n", transZ);
+		break;
+	case 'a':
+	case 'A':
+		transX -= 0.2f;
+		break;
+	case 'd':
+	case 'D':
+		transX += 0.2f;
+		break;
+	case 'q':
+	case 'Q':
+		transY += 0.2f;
+		break;
+	case 'e':
+	case 'E':
+		transY -= 0.2f;
+		break;
+	case 27:        // Cuando Esc es presionado...
+		exit(0);   // Salimos del programa
+		break;
+	default:        // Cualquier otra
+		break;
+	}
 	glutPostRedisplay();
 }
 
-void arrow_keys ( int a_keys, int x, int y )  // Funcion para manejo de teclas especiales (arrow keys)
+void arrow_keys(int a_keys, int x, int y)  // Funcion para manejo de teclas especiales (arrow keys)
 {
-  switch ( a_keys ) {
-    case GLUT_KEY_UP:     // Presionamos tecla ARRIBA...
+	switch (a_keys) {
+	case GLUT_KEY_UP:     // Presionamos tecla ARRIBA...
 		angleX += 1.0f;
 		break;
-      //glutFullScreen ( ); // Full Screen Mode
-      //break;
-    case GLUT_KEY_DOWN:               // Presionamos tecla ABAJO...
+		//glutFullScreen ( ); // Full Screen Mode
+		//break;
+	case GLUT_KEY_DOWN:               // Presionamos tecla ABAJO...
 		angleX -= 1.0f;
 		break;
-      //glutReshapeWindow ( 500, 500 ); // Cambiamos tamano de Ventana
-      //break;
+		//glutReshapeWindow ( 500, 500 ); // Cambiamos tamano de Ventana
+		//break;
 	case GLUT_KEY_LEFT:
 		angleY += 1.0f;
 		break;
 	case GLUT_KEY_RIGHT:
 		angleY -= 1.0f;
 		break;
-    default:
-      break;
-  }
-  glutPostRedisplay();
+	default:
+		break;
+	}
+	glutPostRedisplay();
 }
 
 
-int main ( int argc, char** argv )   // Main Function
+int main(int argc, char** argv)   // Main Function
 {
-  glutInit            (&argc, argv); // Inicializamos OpenGL
-  //glutInitDisplayMode (GLUT_RGBA | GLUT_SINGLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Sencillo )
-  glutInitDisplayMode (GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-  glutInitWindowSize  (500, 500);	// Tamaño de la Ventana
-  glutInitWindowPosition (0, 0);	//Posicion de la Ventana
-  glutCreateWindow    ("Practica 3"); // Nombre de la Ventana
-  InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut función de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut función en caso de cambio de tamano
-  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut función de manejo de teclado
-  glutSpecialFunc     ( arrow_keys );	//Otras
-  glutMainLoop        ( );          // 
+	glutInit(&argc, argv); // Inicializamos OpenGL
+	//glutInitDisplayMode (GLUT_RGBA | GLUT_SINGLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Sencillo )
+	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
+	glutInitWindowSize(500, 500);	// Tamaño de la Ventana
+	glutInitWindowPosition(0, 0);	//Posicion de la Ventana
+	glutCreateWindow("Practica 3"); // Nombre de la Ventana
+	InitGL();						// Parametros iniciales de la aplicacion
+	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut función en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut función de manejo de teclado
+	glutSpecialFunc(arrow_keys);	//Otras
+	glutMainLoop();          // 
 
-  return 0;
+	return 0;
 }
 
 
